@@ -1,31 +1,50 @@
-type <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./Asset/style.css"/>
 </head>
 <body>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="./Asset/index.js"/>
-    <div class="app-wrap">
-        <header>
-            <input type="text" autocomplete="off" class="search-box"
-            Placeholder="Search for a city...."/>
-        </header>
-        <main>
-            <section class="location">
-                <div class="city"> ""</div>
-                <div class="date">""</div>
-            </section>
-            <div class="current">
-                <div class="temperature"><span>°c</span></div>
-
-            </dic>
-        </main>
+     <div class="topnnav">
+        <div class="navbar-header">
+        <a>Weather Dashboard</a> 
     </div>
+    <div class="container">
+        <div class="search-for-cities"></div>
+        <div class="col-8 cities"> 
+            <div class="weatherList">
+                <h4>Search for a city:</h4>
+                <form class="search" action="/action_page.php" style="margin:auto;max-width:300px">
+                <input type="text" placeholder="Search for a city.." name="">
+                <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        <!-- Display the list of cities -->
+        <div class="city-list"></div>
+        <!-- Display weather details -->
+        <div class="col-8 city">
+            <div class="city-info"></div>
+            <div class="container">
+              <div class ="row">
+              <div class="col col-12 weather-forecast">
+                <h2 id="fivedaysForecast"></h2>
+              </div>
+        <!-- Display the Forecast for the next five days. -->
+              <div class="row-12">
+                <h4>5-Day Forecast:</h4>
+                <div class= "row" id="fivedaysweather">
+                    <div class="col col-12 card-weather">
+              </div>
+              <br>
+              <div id ="boxes" class="row">        
+              </div>
+
+    </div>
+</div>
 
 </body>
 </html>
