@@ -14,37 +14,32 @@
         <a>Weather Dashboard</a> 
     </div>
     <div class="container">
-        <div class="search-for-cities"></div>
-        <div class="col-8 cities"> 
-            <div class="weatherList">
+        <div class="search-for-cities">
+            <div class="col-4 cities"> 
                 <h4>Search for a city:</h4>
                 <form class="search" action="/action_page.php" style="margin:auto;max-width:300px">
                 <input type="text" placeholder="Search for a city.." name="">
                 <button type="submit"><i class="fa fa-search"></i></button>
                 </form>
+                </div>
+            <div class="city-list"></div>
+        </div>
+        <div class="col-8 city-info">
+            <div class="current-city">
+                <div class="temp">Temperature:</span>°c</span></div>
+                <div class="humidity:">Humidity:<span>%</span></div>
+                <div class="windspeed:">Windspeed<span>%</span></div>
+                <div class="UV index:">UV Index</div>
             </div>
-        <!-- Display the list of cities -->
-        <div class="city-list"></div>
-        <!-- Display weather details -->
-        <div class="col-8 city">
-            <div class="city-info"></div>
-            <div class="container">
-              <div class ="row">
-              <div class="col col-12 weather-forecast">
-                <h2 id="fivedaysForecast"></h2>
-              </div>
-        <!-- Display the Forecast for the next five days. -->
-              <div class="row-12">
+            <div class="col-4 forecast">
                 <h4>5-Day Forecast:</h4>
                 <div class= "row" id="fivedaysweather">
-                    <div class="col col-12 card-weather">
-              </div>
-              <br>
-              <div id ="boxes" class="row">        
-              </div>
-
-    </div>
-</div>
-
+                <div class="col col-12 card-weather">
+                </div>
+                <br>
+                <div id ="boxes" class="row">        
+            </div>
+        </div>
+     </div>
 </body>
 </html>
